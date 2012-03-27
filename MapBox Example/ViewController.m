@@ -8,27 +8,52 @@
 
 #import "ViewController.h"
 
+#import "RMMapView.h"
+#import "RMMapContents.h"
+#import "RMTileStreamSource.h"
+
+#define kStartingLat   30.0f
+#define kStartingLon  -10.0f
+#define kStartingZoom   1.5f
+
 @interface ViewController ()
+
+@property (nonatomic, strong) IBOutlet RMMapView *mapView;
 
 @end
 
 @implementation ViewController
 
+@synthesize mapView;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    CLLocationCoordinate2D startingPoint;
+    
+    startingPoint.latitude  = kStartingLat;
+    startingPoint.longitude = kStartingLon;
+    
+    NSDictionary *info = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"geography-class" ofType:@"plist"]];
+    
+    RMTileStreamSource *source = [[RMTileStreamSource alloc] initWithInfo:info];
+    
+	[[RMMapContents alloc] initWithView:self.mapView 
+                             tilesource:source
+                           centerLatLon:startingPoint
+                              zoomLevel:kStartingZoom
+                           maxZoomLevel:[source maxZoom]
+                           minZoomLevel:[source minZoom]
+                        backgroundImage:nil
+                            screenScale:0.0];
+    
+    self.mapView.deceleration = YES;
+    self.mapView.enableRotate = NO;
+    
+    self.mapView.backgroundColor = [UIColor darkGrayColor];
+    
+    self.mapView.contents.zoom = kStartingZoom;
 }
 
 @end
