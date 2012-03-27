@@ -10,7 +10,7 @@
 
 #import "RMMapView.h"
 #import "RMMapContents.h"
-#import "RMTileStreamSource.h"
+#import "RMMapBoxSource.h"
 
 #define kStartingLat   30.0f
 #define kStartingLon  -10.0f
@@ -37,7 +37,7 @@
     
     NSDictionary *info = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"geography-class" ofType:@"plist"]];
     
-    RMTileStreamSource *source = [[RMTileStreamSource alloc] initWithInfo:info];
+    RMMapBoxSource *source = [[RMMapBoxSource alloc] initWithInfo:info];
     
 	[[RMMapContents alloc] initWithView:self.mapView 
                              tilesource:source
