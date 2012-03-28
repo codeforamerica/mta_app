@@ -12,10 +12,6 @@
 #import "RMMapContents.h"
 #import "RMMapBoxSource.h"
 
-#define kStartingLat   30.0f
-#define kStartingLon  -10.0f
-#define kStartingZoom   1.5f
-
 @interface ViewController ()
 
 @property (nonatomic, strong) IBOutlet RMMapView *mapView;
@@ -30,30 +26,33 @@
 {
     [super viewDidLoad];
 
-    CLLocationCoordinate2D startingPoint;
+    RMMapBoxSource *source;
     
-    startingPoint.latitude  = kStartingLat;
-    startingPoint.longitude = kStartingLon;
+    // use TileJSON & iOS 5.0+ JSON serialization if available
+    //
+    if ([NSJSONSerialization class])
+        source = [[RMMapBoxSource alloc] initWithReferenceURL:[NSURL URLWithString:@"http://api.tiles.mapbox.com/v2/mapbox.mapbox-streets.json"]];
+
+    // use the old property list method
+    //
+    else
+        source = [[RMMapBoxSource alloc] initWithInfo:[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"geography-class" ofType:@"plist"]]];
     
-    NSDictionary *info = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"geography-class" ofType:@"plist"]];
-    
-    RMMapBoxSource *source = [[RMMapBoxSource alloc] initWithInfo:info];
+    RMLatLong centerLatLong = {
+        .latitude  = [[[source.infoDictionary objectForKey:@"center"] objectAtIndex:1] doubleValue],
+        .longitude = [[[source.infoDictionary objectForKey:@"center"] objectAtIndex:0] doubleValue],
+    };
     
 	[[RMMapContents alloc] initWithView:self.mapView 
                              tilesource:source
-                           centerLatLon:startingPoint
-                              zoomLevel:kStartingZoom
+                           centerLatLon:centerLatLong
+                              zoomLevel:[[[source.infoDictionary objectForKey:@"center"] objectAtIndex:2] floatValue]
                            maxZoomLevel:[source maxZoom]
                            minZoomLevel:[source minZoom]
                         backgroundImage:nil
                             screenScale:0.0];
     
-    self.mapView.deceleration = YES;
-    self.mapView.enableRotate = NO;
-    
     self.mapView.backgroundColor = [UIColor darkGrayColor];
-    
-    self.mapView.contents.zoom = kStartingZoom;
 }
 
 @end
