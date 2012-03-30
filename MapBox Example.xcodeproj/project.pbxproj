@@ -325,9 +325,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapBox Example/MapBox Example-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Route-Me/**";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Alpstein-Route-Me/**";
 				INFOPLIST_FILE = "MapBox Example/MapBox Example-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "MB Example";
 				WRAPPER_EXTENSION = app;
 			};
@@ -338,9 +339,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapBox Example/MapBox Example-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Route-Me/**";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Alpstein-Route-Me/**";
 				INFOPLIST_FILE = "MapBox Example/MapBox Example-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "MB Example";
 				WRAPPER_EXTENSION = app;
 			};

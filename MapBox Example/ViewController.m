@@ -9,7 +9,6 @@
 #import "ViewController.h"
 
 #import "RMMapView.h"
-#import "RMMapContents.h"
 #import "RMMapBoxSource.h"
 
 @interface ViewController ()
@@ -28,21 +27,19 @@
 
     RMMapBoxSource *source = [[RMMapBoxSource alloc] init]; // just use default MapBox style provided
 
-    RMLatLong centerLatLong = {
+    CLLocationCoordinate2D centerLatLong = {
         .latitude  = [[[source.infoDictionary objectForKey:@"center"] objectAtIndex:1] doubleValue],
         .longitude = [[[source.infoDictionary objectForKey:@"center"] objectAtIndex:0] doubleValue],
     };
     
-	[[RMMapContents alloc] initWithView:self.mapView 
-                             tilesource:source
-                           centerLatLon:centerLatLong
-                              zoomLevel:[[[source.infoDictionary objectForKey:@"center"] objectAtIndex:2] floatValue]
-                           maxZoomLevel:[source maxZoom]
-                           minZoomLevel:[source minZoom]
-                        backgroundImage:nil
-                            screenScale:0.0];
+    self.mapView.tileSource = source;
+    self.mapView.zoom = [[[source.infoDictionary objectForKey:@"center"] objectAtIndex:2] floatValue];
+    
+    [self.mapView setCenterCoordinate:centerLatLong animated:NO];
     
     self.mapView.backgroundColor = [UIColor darkGrayColor];
+    
+    self.mapView.decelerationMode = RMMapDecelerationFast;
 }
 
 @end
