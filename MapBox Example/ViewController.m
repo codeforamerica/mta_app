@@ -33,6 +33,7 @@
     };
     
     self.mapView.tileSource = source;
+    
     self.mapView.zoom = [[[source.infoDictionary objectForKey:@"center"] objectAtIndex:2] floatValue];
     
     [self.mapView setCenterCoordinate:centerLatLong animated:NO];
@@ -40,6 +41,8 @@
     self.mapView.backgroundColor = [UIColor darkGrayColor];
     
     self.mapView.decelerationMode = RMMapDecelerationFast;
+
+    self.mapView.adjustTilesForRetinaDisplay = YES;
 }
 
 @end
