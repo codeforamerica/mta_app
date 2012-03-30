@@ -1,3 +1,6 @@
 [submodule "Route-Me"]
 	path = Route-Me
 	url = https://github.com/route-me/route-me.git
+[submodule "Alpstein-Route-Me"]
+	path = Alpstein-Route-Me
+	url = https://github.com/Alpstein/route-me.git
