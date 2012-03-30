@@ -26,18 +26,8 @@
 {
     [super viewDidLoad];
 
-    RMMapBoxSource *source;
-    
-    // use TileJSON & iOS 5.0+ JSON serialization if available
-    //
-    if ([NSJSONSerialization class])
-        source = [[RMMapBoxSource alloc] initWithReferenceURL:[NSURL URLWithString:@"http://api.tiles.mapbox.com/v2/mapbox.mapbox-streets.json"]];
+    RMMapBoxSource *source = [[RMMapBoxSource alloc] initWithReferenceURL:[NSURL URLWithString:@"http://api.tiles.mapbox.com/v2/mapbox.mapbox-streets.json"]];
 
-    // use the old property list method
-    //
-    else
-        source = [[RMMapBoxSource alloc] initWithInfo:[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"geography-class" ofType:@"plist"]]];
-    
     RMLatLong centerLatLong = {
         .latitude  = [[[source.infoDictionary objectForKey:@"center"] objectAtIndex:1] doubleValue],
         .longitude = [[[source.infoDictionary objectForKey:@"center"] objectAtIndex:0] doubleValue],

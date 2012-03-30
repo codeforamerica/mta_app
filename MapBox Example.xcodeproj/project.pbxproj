@@ -16,7 +16,6 @@
 		DDEF3A411522813600DE6DB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEF3A401522813600DE6DB0 /* ViewController.m */; };
 		DDEF3A441522813600DE6DB0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDEF3A421522813600DE6DB0 /* ViewController.xib */; };
 		DDEF3A691522829500DE6DB0 /* libMapView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A611522827B00DE6DB0 /* libMapView.a */; };
-		DDEF3A6B1522845F00DE6DB0 /* geography-class.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDEF3A6A1522845F00DE6DB0 /* geography-class.plist */; };
 		DDEF3A6D1522847A00DE6DB0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A6C1522847A00DE6DB0 /* QuartzCore.framework */; };
 		DDEF3A6F1522848500DE6DB0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A6E1522848500DE6DB0 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
@@ -67,7 +66,6 @@
 		DDEF3A401522813600DE6DB0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DDEF3A431522813600DE6DB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		DDEF3A501522827A00DE6DB0 /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "Route-Me/MapView/MapView.xcodeproj"; sourceTree = SOURCE_ROOT; };
-		DDEF3A6A1522845F00DE6DB0 /* geography-class.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "geography-class.plist"; sourceTree = "<group>"; };
 		DDEF3A6C1522847A00DE6DB0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DDEF3A6E1522848500DE6DB0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -139,7 +137,6 @@
 				DDEF3A361522813600DE6DB0 /* InfoPlist.strings */,
 				DDEF3A391522813600DE6DB0 /* main.m */,
 				DDEF3A3B1522813600DE6DB0 /* MapBox Example-Prefix.pch */,
-				DDEF3A6A1522845F00DE6DB0 /* geography-class.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -247,7 +244,6 @@
 			files = (
 				DDEF3A381522813600DE6DB0 /* InfoPlist.strings in Resources */,
 				DDEF3A441522813600DE6DB0 /* ViewController.xib in Resources */,
-				DDEF3A6B1522845F00DE6DB0 /* geography-class.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
