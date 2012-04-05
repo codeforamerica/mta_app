@@ -8,14 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		DDC4BEA8152E300800089409 /* libMapView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC4BEA3152E2FDE00089409 /* libMapView.a */; };
+		DDC4BEC1152E351F00089409 /* online.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEBF152E351F00089409 /* online.png */; };
+		DDC4BEC2152E351F00089409 /* online@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEC0152E351F00089409 /* online@2x.png */; };
+		DDC4BEC6152E366800089409 /* OfflineLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC4BEC5152E366800089409 /* OfflineLayerViewController.m */; };
+		DDC4BEC9152E36FF00089409 /* offline.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEC7152E36FF00089409 /* offline.png */; };
+		DDC4BECA152E36FF00089409 /* offline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEC8152E36FF00089409 /* offline@2x.png */; };
+		DDC4BECC152E380900089409 /* control-room-0.2.0.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BECB152E380900089409 /* control-room-0.2.0.mbtiles */; };
+		DDC4BECF152E38D200089409 /* interactive.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BECD152E38D200089409 /* interactive.png */; };
+		DDC4BED0152E38D200089409 /* interactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BECE152E38D200089409 /* interactive@2x.png */; };
 		DDEF3A2E1522813600DE6DB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A2D1522813600DE6DB0 /* UIKit.framework */; };
 		DDEF3A301522813600DE6DB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A2F1522813600DE6DB0 /* Foundation.framework */; };
 		DDEF3A321522813600DE6DB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A311522813600DE6DB0 /* CoreGraphics.framework */; };
 		DDEF3A381522813600DE6DB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDEF3A361522813600DE6DB0 /* InfoPlist.strings */; };
 		DDEF3A3A1522813600DE6DB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEF3A391522813600DE6DB0 /* main.m */; };
 		DDEF3A3E1522813600DE6DB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEF3A3D1522813600DE6DB0 /* AppDelegate.m */; };
-		DDEF3A411522813600DE6DB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEF3A401522813600DE6DB0 /* ViewController.m */; };
-		DDEF3A441522813600DE6DB0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDEF3A421522813600DE6DB0 /* ViewController.xib */; };
+		DDEF3A411522813600DE6DB0 /* OnlineLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEF3A401522813600DE6DB0 /* OnlineLayerViewController.m */; };
 		DDEF3A6D1522847A00DE6DB0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A6C1522847A00DE6DB0 /* QuartzCore.framework */; };
 		DDEF3A6F1522848500DE6DB0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A6E1522848500DE6DB0 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
@@ -46,6 +53,15 @@
 
 /* Begin PBXFileReference section */
 		DD96557015264A080008517A /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "MapBox-iOS-SDK/MapView/MapView.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		DDC4BEBF152E351F00089409 /* online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = online.png; sourceTree = "<group>"; };
+		DDC4BEC0152E351F00089409 /* online@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "online@2x.png"; sourceTree = "<group>"; };
+		DDC4BEC4152E366800089409 /* OfflineLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineLayerViewController.h; sourceTree = "<group>"; };
+		DDC4BEC5152E366800089409 /* OfflineLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflineLayerViewController.m; sourceTree = "<group>"; };
+		DDC4BEC7152E36FF00089409 /* offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offline.png; sourceTree = "<group>"; };
+		DDC4BEC8152E36FF00089409 /* offline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offline@2x.png"; sourceTree = "<group>"; };
+		DDC4BECB152E380900089409 /* control-room-0.2.0.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "control-room-0.2.0.mbtiles"; sourceTree = "<group>"; };
+		DDC4BECD152E38D200089409 /* interactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interactive.png; sourceTree = "<group>"; };
+		DDC4BECE152E38D200089409 /* interactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "interactive@2x.png"; sourceTree = "<group>"; };
 		DDEF3A291522813600DE6DB0 /* MB Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MB Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEF3A2D1522813600DE6DB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DDEF3A2F1522813600DE6DB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,9 +72,8 @@
 		DDEF3A3B1522813600DE6DB0 /* MapBox Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapBox Example-Prefix.pch"; sourceTree = "<group>"; };
 		DDEF3A3C1522813600DE6DB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DDEF3A3D1522813600DE6DB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DDEF3A3F1522813600DE6DB0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DDEF3A401522813600DE6DB0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DDEF3A431522813600DE6DB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		DDEF3A3F1522813600DE6DB0 /* OnlineLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnlineLayerViewController.h; sourceTree = "<group>"; };
+		DDEF3A401522813600DE6DB0 /* OnlineLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlineLayerViewController.m; sourceTree = "<group>"; };
 		DDEF3A6C1522847A00DE6DB0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DDEF3A6E1522848500DE6DB0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -98,6 +113,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DDC4BEC3152E356F00089409 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDC4BEBF152E351F00089409 /* online.png */,
+				DDC4BEC0152E351F00089409 /* online@2x.png */,
+				DDC4BEC7152E36FF00089409 /* offline.png */,
+				DDC4BEC8152E36FF00089409 /* offline@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		DDEF3A1E1522813600DE6DB0 = {
 			isa = PBXGroup;
 			children = (
@@ -133,9 +159,11 @@
 			children = (
 				DDEF3A3C1522813600DE6DB0 /* AppDelegate.h */,
 				DDEF3A3D1522813600DE6DB0 /* AppDelegate.m */,
-				DDEF3A3F1522813600DE6DB0 /* ViewController.h */,
-				DDEF3A401522813600DE6DB0 /* ViewController.m */,
-				DDEF3A421522813600DE6DB0 /* ViewController.xib */,
+				DDEF3A3F1522813600DE6DB0 /* OnlineLayerViewController.h */,
+				DDEF3A401522813600DE6DB0 /* OnlineLayerViewController.m */,
+				DDC4BEC4152E366800089409 /* OfflineLayerViewController.h */,
+				DDC4BEC5152E366800089409 /* OfflineLayerViewController.m */,
+				DDC4BEC3152E356F00089409 /* Resources */,
 				DDEF3A341522813600DE6DB0 /* Supporting Files */,
 			);
 			path = "MapBox Example";
@@ -148,6 +176,7 @@
 				DDEF3A361522813600DE6DB0 /* InfoPlist.strings */,
 				DDEF3A391522813600DE6DB0 /* main.m */,
 				DDEF3A3B1522813600DE6DB0 /* MapBox Example-Prefix.pch */,
+				DDC4BECB152E380900089409 /* control-room-0.2.0.mbtiles */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -228,7 +257,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDEF3A381522813600DE6DB0 /* InfoPlist.strings in Resources */,
-				DDEF3A441522813600DE6DB0 /* ViewController.xib in Resources */,
+				DDC4BEC1152E351F00089409 /* online.png in Resources */,
+				DDC4BEC2152E351F00089409 /* online@2x.png in Resources */,
+				DDC4BEC9152E36FF00089409 /* offline.png in Resources */,
+				DDC4BECA152E36FF00089409 /* offline@2x.png in Resources */,
+				DDC4BECC152E380900089409 /* control-room-0.2.0.mbtiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +274,8 @@
 			files = (
 				DDEF3A3A1522813600DE6DB0 /* main.m in Sources */,
 				DDEF3A3E1522813600DE6DB0 /* AppDelegate.m in Sources */,
-				DDEF3A411522813600DE6DB0 /* ViewController.m in Sources */,
+				DDEF3A411522813600DE6DB0 /* OnlineLayerViewController.m in Sources */,
+				DDC4BEC6152E366800089409 /* OfflineLayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,14 +296,6 @@
 				DDEF3A371522813600DE6DB0 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		DDEF3A421522813600DE6DB0 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DDEF3A431522813600DE6DB0 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

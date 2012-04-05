@@ -8,20 +8,24 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "OnlineLayerViewController.h"
+#import "OfflineLayerViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize viewController = _viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
-    self.window.rootViewController = self.viewController;
+    tabBarController.viewControllers = [NSArray arrayWithObjects:[[OnlineLayerViewController  alloc] initWithNibName:nil bundle:nil],
+                                                                 [[OfflineLayerViewController alloc] initWithNibName:nil bundle:nil],
+                                                                 nil];
+    
+    self.window.rootViewController = tabBarController;
     
     [self.window makeKeyAndVisible];
     
