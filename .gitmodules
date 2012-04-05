@@ -1,6 +1,3 @@
-[submodule "Route-Me"]
-	path = Route-Me
-	url = https://github.com/route-me/route-me.git
 [submodule "MapBox-iOS-SDK"]
 	path = MapBox-iOS-SDK
 	url = https://github.com/mapbox/mapbox-ios-sdk.git
