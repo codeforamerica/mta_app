@@ -25,7 +25,7 @@
 {
     [super viewDidLoad];
 
-    RMMapBoxSource *source = [[RMMapBoxSource alloc] init]; // just use default MapBox style provided
+    RMMapBoxSource *source = [[RMMapBoxSource alloc] initWithReferenceURL:[NSURL URLWithString:@"http://a.tiles.mapbox.com/v3/mapbox.mapbox-streets.json"]];
 
     CLLocationCoordinate2D centerLatLong = {
         .latitude  = [[[source.infoDictionary objectForKey:@"center"] objectAtIndex:1] doubleValue],
