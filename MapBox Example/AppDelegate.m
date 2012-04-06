@@ -39,8 +39,6 @@
     
     tabBarController.viewControllers = viewControllers;
     
-    tabBarController.selectedIndex = 2;
-    
     self.window.rootViewController = tabBarController;
     
     [self.window makeKeyAndVisible];
