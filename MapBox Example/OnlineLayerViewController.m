@@ -17,8 +17,6 @@
 {
     [super viewDidLoad];
 
-    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Online Layer" image:[UIImage imageNamed:@"online.png"] tag:0];
-    
     RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithReferenceURL:[NSURL URLWithString:@"http://a.tiles.mapbox.com/v3/mapbox.mapbox-streets.json"]];
 
     RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:onlineSource];

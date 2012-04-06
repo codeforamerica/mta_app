@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD76D72E152E47660065DBB2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC4BF10152E455500089409 /* libz.dylib */; };
 		DDC4BEA8152E300800089409 /* libMapView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC4BEA3152E2FDE00089409 /* libMapView.a */; };
 		DDC4BEC1152E351F00089409 /* online.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEBF152E351F00089409 /* online.png */; };
 		DDC4BEC2152E351F00089409 /* online@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEC0152E351F00089409 /* online@2x.png */; };
@@ -16,6 +17,8 @@
 		DDC4BECC152E380900089409 /* control-room-0.2.0.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BECB152E380900089409 /* control-room-0.2.0.mbtiles */; };
 		DDC4BECF152E38D200089409 /* interactive.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BECD152E38D200089409 /* interactive.png */; };
 		DDC4BED0152E38D200089409 /* interactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BECE152E38D200089409 /* interactive@2x.png */; };
+		DDC4BEF1152E3EEE00089409 /* InteractiveLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC4BEEF152E3EEE00089409 /* InteractiveLayerViewController.m */; };
+		DDC4BF12152E457A00089409 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A6E1522848500DE6DB0 /* libsqlite3.dylib */; };
 		DDEF3A2E1522813600DE6DB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A2D1522813600DE6DB0 /* UIKit.framework */; };
 		DDEF3A301522813600DE6DB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A2F1522813600DE6DB0 /* Foundation.framework */; };
 		DDEF3A321522813600DE6DB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A311522813600DE6DB0 /* CoreGraphics.framework */; };
@@ -24,7 +27,6 @@
 		DDEF3A3E1522813600DE6DB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEF3A3D1522813600DE6DB0 /* AppDelegate.m */; };
 		DDEF3A411522813600DE6DB0 /* OnlineLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEF3A401522813600DE6DB0 /* OnlineLayerViewController.m */; };
 		DDEF3A6D1522847A00DE6DB0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A6C1522847A00DE6DB0 /* QuartzCore.framework */; };
-		DDEF3A6F1522848500DE6DB0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A6E1522848500DE6DB0 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		DDC4BECB152E380900089409 /* control-room-0.2.0.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "control-room-0.2.0.mbtiles"; sourceTree = "<group>"; };
 		DDC4BECD152E38D200089409 /* interactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interactive.png; sourceTree = "<group>"; };
 		DDC4BECE152E38D200089409 /* interactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "interactive@2x.png"; sourceTree = "<group>"; };
+		DDC4BEEF152E3EEE00089409 /* InteractiveLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveLayerViewController.m; sourceTree = "<group>"; };
+		DDC4BEF0152E3EEE00089409 /* InteractiveLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveLayerViewController.h; sourceTree = "<group>"; };
+		DDC4BF10152E455500089409 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DDEF3A291522813600DE6DB0 /* MB Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MB Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEF3A2D1522813600DE6DB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DDEF3A2F1522813600DE6DB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,7 +93,8 @@
 				DDEF3A6D1522847A00DE6DB0 /* QuartzCore.framework in Frameworks */,
 				DDEF3A2E1522813600DE6DB0 /* UIKit.framework in Frameworks */,
 				DDC4BEA8152E300800089409 /* libMapView.a in Frameworks */,
-				DDEF3A6F1522848500DE6DB0 /* libsqlite3.dylib in Frameworks */,
+				DDC4BF12152E457A00089409 /* libsqlite3.dylib in Frameworks */,
+				DD76D72E152E47660065DBB2 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +126,8 @@
 				DDC4BEC0152E351F00089409 /* online@2x.png */,
 				DDC4BEC7152E36FF00089409 /* offline.png */,
 				DDC4BEC8152E36FF00089409 /* offline@2x.png */,
+				DDC4BECD152E38D200089409 /* interactive.png */,
+				DDC4BECE152E38D200089409 /* interactive@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -150,6 +158,7 @@
 				DDEF3A6C1522847A00DE6DB0 /* QuartzCore.framework */,
 				DDEF3A2D1522813600DE6DB0 /* UIKit.framework */,
 				DDEF3A6E1522848500DE6DB0 /* libsqlite3.dylib */,
+				DDC4BF10152E455500089409 /* libz.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,6 +172,8 @@
 				DDEF3A401522813600DE6DB0 /* OnlineLayerViewController.m */,
 				DDC4BEC4152E366800089409 /* OfflineLayerViewController.h */,
 				DDC4BEC5152E366800089409 /* OfflineLayerViewController.m */,
+				DDC4BEF0152E3EEE00089409 /* InteractiveLayerViewController.h */,
+				DDC4BEEF152E3EEE00089409 /* InteractiveLayerViewController.m */,
 				DDC4BEC3152E356F00089409 /* Resources */,
 				DDEF3A341522813600DE6DB0 /* Supporting Files */,
 			);
@@ -262,6 +273,8 @@
 				DDC4BEC9152E36FF00089409 /* offline.png in Resources */,
 				DDC4BECA152E36FF00089409 /* offline@2x.png in Resources */,
 				DDC4BECC152E380900089409 /* control-room-0.2.0.mbtiles in Resources */,
+				DDC4BECF152E38D200089409 /* interactive.png in Resources */,
+				DDC4BED0152E38D200089409 /* interactive@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +289,7 @@
 				DDEF3A3E1522813600DE6DB0 /* AppDelegate.m in Sources */,
 				DDEF3A411522813600DE6DB0 /* OnlineLayerViewController.m in Sources */,
 				DDC4BEC6152E366800089409 /* OfflineLayerViewController.m in Sources */,
+				DDC4BEF1152E3EEE00089409 /* InteractiveLayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

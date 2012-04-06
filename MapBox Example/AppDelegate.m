@@ -10,6 +10,7 @@
 
 #import "OnlineLayerViewController.h"
 #import "OfflineLayerViewController.h"
+#import "InteractiveLayerViewController.h"
 
 @implementation AppDelegate
 
@@ -21,9 +22,24 @@
 
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
-    tabBarController.viewControllers = [NSArray arrayWithObjects:[[OnlineLayerViewController  alloc] initWithNibName:nil bundle:nil],
-                                                                 [[OfflineLayerViewController alloc] initWithNibName:nil bundle:nil],
-                                                                 nil];
+    NSMutableArray *viewControllers = [NSMutableArray array];
+    
+    for (NSString *typeString in [NSArray arrayWithObjects:@"online", @"offline", @"interactive", nil])
+    {
+        Class ViewControllerClass = NSClassFromString([NSString stringWithFormat:@"%@LayerViewController", [typeString capitalizedString]]);
+        
+        UIViewController *viewController = [[ViewControllerClass alloc] initWithNibName:nil bundle:nil];
+        
+        viewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:[NSString stringWithFormat:@"%@ Layer", [typeString capitalizedString]]
+                                                                  image:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", typeString]] 
+                                                                    tag:0];
+        
+        [viewControllers addObject:viewController];
+    }
+    
+    tabBarController.viewControllers = viewControllers;
+    
+    tabBarController.selectedIndex = 2;
     
     self.window.rootViewController = tabBarController;
     
