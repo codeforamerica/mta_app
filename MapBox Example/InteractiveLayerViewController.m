@@ -33,6 +33,8 @@
     
     mapView.decelerationMode = RMMapDecelerationFast;
 
+    mapView.boundingMask = RMMapMinHeightBound;
+
     mapView.adjustTilesForRetinaDisplay = YES;
     
     [self.view addSubview:mapView];
