@@ -12,3 +12,7 @@ This is an example showing usage of the [MapBox iOS SDK](https://github.com/mapb
 
  1. `git clone --recursive` to pull down dependencies
  1. Build & go!
+
+Be sure to select the proper target -- the application itself -- so that both the app and its dependent libraries will build and the app will run from Xcode. 
+
+![](https://github.com/mapbox/mapbox-ios-example/raw/master/target.png)
