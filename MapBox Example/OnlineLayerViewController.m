@@ -11,13 +11,18 @@
 #import "RMMapView.h"
 #import "RMMapBoxSource.h"
 
+#define kNormalSourceURL [NSURL URLWithString:@"http://a.tiles.mapbox.com/v3/justin.map-s2effxa8.jsonp"]
+#define kRetinaSourceURL [NSURL URLWithString:@"http://a.tiles.mapbox.com/v3/justin.map-kswgei2n.jsonp"]
+
 @implementation OnlineLayerViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithReferenceURL:[NSURL URLWithString:@"http://a.tiles.mapbox.com/v3/mapbox.mapbox-streets.json"]];
+    BOOL retinaCapable = ([[UIScreen mainScreen] scale] == 2.0);
+    
+    RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithReferenceURL:(retinaCapable ? kRetinaSourceURL : kNormalSourceURL)];
 
     RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:onlineSource];
     
@@ -29,8 +34,6 @@
     
     mapView.boundingMask = RMMapMinHeightBound;
 
-    mapView.adjustTilesForRetinaDisplay = YES;
-    
     [self.view addSubview:mapView];
 }
 
