@@ -20,9 +20,7 @@
 {
     [super viewDidLoad];
 
-    BOOL retinaCapable = ([[UIScreen mainScreen] scale] == 2.0);
-    
-    RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithReferenceURL:(retinaCapable ? kRetinaSourceURL : kNormalSourceURL)];
+    RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithReferenceURL:(([[UIScreen mainScreen] scale] > 1.0) ? kRetinaSourceURL : kNormalSourceURL)];
 
     RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:onlineSource];
     
