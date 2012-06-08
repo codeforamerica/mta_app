@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD3A27EE1582A0AB00DADEFF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3A27ED1582A0AB00DADEFF /* CoreLocation.framework */; };
 		DD76D72E152E47660065DBB2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC4BF10152E455500089409 /* libz.dylib */; };
 		DDC4BEA8152E300800089409 /* libMapView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC4BEA3152E2FDE00089409 /* libMapView.a */; };
 		DDC4BEC1152E351F00089409 /* online.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEBF152E351F00089409 /* online.png */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD3A27ED1582A0AB00DADEFF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DD96557015264A080008517A /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "MapBox-iOS-SDK/MapView/MapView.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		DDC4BEBF152E351F00089409 /* online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = online.png; sourceTree = "<group>"; };
 		DDC4BEC0152E351F00089409 /* online@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "online@2x.png"; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDEF3A321522813600DE6DB0 /* CoreGraphics.framework in Frameworks */,
+				DD3A27EE1582A0AB00DADEFF /* CoreLocation.framework in Frameworks */,
 				DDEF3A301522813600DE6DB0 /* Foundation.framework in Frameworks */,
 				DDEF3A6D1522847A00DE6DB0 /* QuartzCore.framework in Frameworks */,
 				DDEF3A2E1522813600DE6DB0 /* UIKit.framework in Frameworks */,
@@ -154,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				DDEF3A311522813600DE6DB0 /* CoreGraphics.framework */,
+				DD3A27ED1582A0AB00DADEFF /* CoreLocation.framework */,
 				DDEF3A2F1522813600DE6DB0 /* Foundation.framework */,
 				DDEF3A6C1522847A00DE6DB0 /* QuartzCore.framework */,
 				DDEF3A2D1522813600DE6DB0 /* UIKit.framework */,
