@@ -30,6 +30,8 @@
     
     mapView.decelerationMode = RMMapDecelerationFast;
     
+    mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    
     mapView.boundingMask = RMMapMinHeightBound;
 
     [self.view addSubview:mapView];
