@@ -11,7 +11,6 @@
 #import "OnlineLayerViewController.h"
 #import "OfflineLayerViewController.h"
 #import "InteractiveLayerViewController.h"
-#import "AttributionViewController.h"
 
 @implementation AppDelegate
 
@@ -40,33 +39,11 @@
     
     tabBarController.viewControllers = viewControllers;
     
-    UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
-    
-    [infoButton addTarget:self action:@selector(showInfo:) forControlEvents:UIControlEventTouchUpInside];
-    
-    infoButton.frame = CGRectMake(tabBarController.view.frame.origin.x + 290, 
-                                  tabBarController.view.frame.origin.y + 400, 
-                                  infoButton.bounds.size.width, 
-                                  infoButton.bounds.size.height);
-    
-    [tabBarController.view addSubview:infoButton];
-    
     self.window.rootViewController = tabBarController;
     
     [self.window makeKeyAndVisible];
     
     return YES;
-}
-
-#pragma mark -
-
-- (void)showInfo:(id)sender
-{
-    AttributionViewController *viewController = [[AttributionViewController alloc] initWithNibName:nil bundle:nil];
-    
-    viewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
-    
-    [self.window.rootViewController presentModalViewController:viewController animated:YES];
 }
 
 @end

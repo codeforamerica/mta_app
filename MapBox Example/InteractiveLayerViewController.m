@@ -39,6 +39,8 @@
 
     mapView.adjustTilesForRetinaDisplay = YES;
     
+    mapView.viewControllerPresentingAttribution = self;
+
     [self.view addSubview:mapView];
 }
 
