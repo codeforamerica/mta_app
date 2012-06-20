@@ -129,6 +129,7 @@
 		DDC4BEC3152E356F00089409 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DDC4BECB152E380900089409 /* control-room-0.2.0.mbtiles */,
 				DDC4BEBF152E351F00089409 /* online.png */,
 				DDC4BEC0152E351F00089409 /* online@2x.png */,
 				DDC4BEC7152E36FF00089409 /* offline.png */,
@@ -139,12 +140,14 @@
 				DDD9E7A615912CA700F29679 /* icon@2x.png */,
 			);
 			name = Resources;
+			path = "MapBox Example";
 			sourceTree = "<group>";
 		};
 		DDEF3A1E1522813600DE6DB0 = {
 			isa = PBXGroup;
 			children = (
 				DDEF3A331522813600DE6DB0 /* MapBox Example */,
+				DDC4BEC3152E356F00089409 /* Resources */,
 				DD96556F152649F10008517A /* MapBox SDK */,
 				DDEF3A2C1522813600DE6DB0 /* Frameworks */,
 				DDEF3A2A1522813600DE6DB0 /* Products */,
@@ -184,7 +187,6 @@
 				DDC4BEC5152E366800089409 /* OfflineLayerViewController.m */,
 				DDC4BEF0152E3EEE00089409 /* InteractiveLayerViewController.h */,
 				DDC4BEEF152E3EEE00089409 /* InteractiveLayerViewController.m */,
-				DDC4BEC3152E356F00089409 /* Resources */,
 				DDEF3A341522813600DE6DB0 /* Supporting Files */,
 			);
 			path = "MapBox Example";
@@ -197,7 +199,6 @@
 				DDEF3A361522813600DE6DB0 /* InfoPlist.strings */,
 				DDEF3A391522813600DE6DB0 /* main.m */,
 				DDEF3A3B1522813600DE6DB0 /* MapBox Example-Prefix.pch */,
-				DDC4BECB152E380900089409 /* control-room-0.2.0.mbtiles */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
