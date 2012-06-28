@@ -11,22 +11,27 @@
 #import "RMMapView.h"
 #import "RMMapBoxSource.h"
 
-#define kNormalSourceURL [NSURL URLWithString:@"http://a.tiles.mapbox.com/v3/justin.map-s2effxa8.jsonp"] // see https://tiles.mapbox.com/justin/map/map-s2effxa8
-#define kRetinaSourceURL [NSURL URLWithString:@"http://a.tiles.mapbox.com/v3/justin.map-kswgei2n.jsonp"] // see https://tiles.mapbox.com/justin/map/map-kswgei2n
-
 @implementation OnlineLayerViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithReferenceURL:(([[UIScreen mainScreen] scale] > 1.0) ? kRetinaSourceURL : kNormalSourceURL)];
-
-    RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:onlineSource];
     
-    mapView.zoom = 2;
+    NSURL *url = [NSURL URLWithString:@"http://a.tiles.mapbox.com/v3/jllord.mta.json"];
     
-    mapView.backgroundColor = [UIColor darkGrayColor];
+    RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithReferenceURL:url];
+    
+    CLLocationCoordinate2D coord;
+    coord.latitude = 32.83651;
+    coord.longitude = -83.62915;
+    
+    RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds
+                                            andTilesource:onlineSource
+                                         centerCoordinate:coord
+                                                zoomLevel:14
+                                             maxZoomLevel:17
+                                             minZoomLevel:11
+                                          backgroundImage:[UIImage imageNamed:@"background.png"]];
     
     mapView.decelerationMode = RMMapDecelerationFast;
     

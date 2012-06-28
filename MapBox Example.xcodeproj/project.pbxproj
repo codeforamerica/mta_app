@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79388C52159A7FDD00C5C66B /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 79388C51159A7FDD00C5C66B /* background.png */; };
+		7940A34B159D00C100989592 /* flagtag.png in Resources */ = {isa = PBXBuildFile; fileRef = 7940A349159D00C100989592 /* flagtag.png */; };
+		7940A34C159D00C100989592 /* flagtag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7940A34A159D00C100989592 /* flagtag@2x.png */; };
+		79692519159BC3DD00E9B7EE /* tabbarBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79692517159BC3DD00E9B7EE /* tabbarBackground@2x.png */; };
+		7969251A159BC3DD00E9B7EE /* tabbarSelection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79692518159BC3DD00E9B7EE /* tabbarSelection@2x.png */; };
+		7969251D159BC48000E9B7EE /* tabbarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7969251B159BC48000E9B7EE /* tabbarBackground.png */; };
+		7969251E159BC48000E9B7EE /* tabbarSelection.png in Resources */ = {isa = PBXBuildFile; fileRef = 7969251C159BC48000E9B7EE /* tabbarSelection.png */; };
+		79692521159BC83600E9B7EE /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 7969251F159BC83600E9B7EE /* map.png */; };
+		79692522159BC83600E9B7EE /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79692520159BC83600E9B7EE /* map@2x.png */; };
+		79692525159BC98400E9B7EE /* legend.png in Resources */ = {isa = PBXBuildFile; fileRef = 79692523159BC98400E9B7EE /* legend.png */; };
+		79692526159BC98400E9B7EE /* legend@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79692524159BC98400E9B7EE /* legend@2x.png */; };
+		79692529159BCB8C00E9B7EE /* LegendLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79692528159BCB8C00E9B7EE /* LegendLayerViewController.m */; };
+		7969252C159BCF5C00E9B7EE /* legendBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7969252A159BCF5C00E9B7EE /* legendBackground.png */; };
+		7969252D159BCF5C00E9B7EE /* legendBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7969252B159BCF5C00E9B7EE /* legendBackground@2x.png */; };
+		79692530159BDA1500E9B7EE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7969252E159BDA1500E9B7EE /* Default.png */; };
+		79692531159BDA1500E9B7EE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7969252F159BDA1500E9B7EE /* Default@2x.png */; };
+		79C31569159CE7C500F2747D /* HiddenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79C31568159CE7C500F2747D /* HiddenView.xib */; };
 		DD3A27EE1582A0AB00DADEFF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3A27ED1582A0AB00DADEFF /* CoreLocation.framework */; };
 		DD76D72E152E47660065DBB2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC4BF10152E455500089409 /* libz.dylib */; };
 		DDC4BEA8152E300800089409 /* libMapView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC4BEA3152E2FDE00089409 /* libMapView.a */; };
-		DDC4BEC1152E351F00089409 /* online.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEBF152E351F00089409 /* online.png */; };
-		DDC4BEC2152E351F00089409 /* online@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEC0152E351F00089409 /* online@2x.png */; };
-		DDC4BEC6152E366800089409 /* OfflineLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC4BEC5152E366800089409 /* OfflineLayerViewController.m */; };
-		DDC4BEC9152E36FF00089409 /* offline.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEC7152E36FF00089409 /* offline.png */; };
-		DDC4BECA152E36FF00089409 /* offline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEC8152E36FF00089409 /* offline@2x.png */; };
-		DDC4BECC152E380900089409 /* control-room-0.2.0.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BECB152E380900089409 /* control-room-0.2.0.mbtiles */; };
-		DDC4BECF152E38D200089409 /* interactive.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BECD152E38D200089409 /* interactive.png */; };
-		DDC4BED0152E38D200089409 /* interactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BECE152E38D200089409 /* interactive@2x.png */; };
-		DDC4BEF1152E3EEE00089409 /* InteractiveLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC4BEEF152E3EEE00089409 /* InteractiveLayerViewController.m */; };
 		DDC4BF12152E457A00089409 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A6E1522848500DE6DB0 /* libsqlite3.dylib */; };
 		DDD9E7A815912CA700F29679 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9E7A615912CA700F29679 /* icon@2x.png */; };
 		DDD9E7A915912CA700F29679 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9E7A715912CA700F29679 /* icon.png */; };
@@ -57,19 +65,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79388C51159A7FDD00C5C66B /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		7940A349159D00C100989592 /* flagtag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flagtag.png; sourceTree = "<group>"; };
+		7940A34A159D00C100989592 /* flagtag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flagtag@2x.png"; sourceTree = "<group>"; };
+		79692517159BC3DD00E9B7EE /* tabbarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbarBackground@2x.png"; sourceTree = "<group>"; };
+		79692518159BC3DD00E9B7EE /* tabbarSelection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbarSelection@2x.png"; sourceTree = "<group>"; };
+		7969251B159BC48000E9B7EE /* tabbarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbarBackground.png; sourceTree = "<group>"; };
+		7969251C159BC48000E9B7EE /* tabbarSelection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbarSelection.png; sourceTree = "<group>"; };
+		7969251F159BC83600E9B7EE /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		79692520159BC83600E9B7EE /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
+		79692523159BC98400E9B7EE /* legend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legend.png; sourceTree = "<group>"; };
+		79692524159BC98400E9B7EE /* legend@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "legend@2x.png"; sourceTree = "<group>"; };
+		79692527159BCB8C00E9B7EE /* LegendLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LegendLayerViewController.h; sourceTree = "<group>"; };
+		79692528159BCB8C00E9B7EE /* LegendLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LegendLayerViewController.m; sourceTree = "<group>"; };
+		7969252A159BCF5C00E9B7EE /* legendBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legendBackground.png; sourceTree = "<group>"; };
+		7969252B159BCF5C00E9B7EE /* legendBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "legendBackground@2x.png"; sourceTree = "<group>"; };
+		7969252E159BDA1500E9B7EE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7969252F159BDA1500E9B7EE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		79C31568159CE7C500F2747D /* HiddenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HiddenView.xib; sourceTree = "<group>"; };
 		DD3A27ED1582A0AB00DADEFF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DD96557015264A080008517A /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "MapBox-iOS-SDK/MapView/MapView.xcodeproj"; sourceTree = SOURCE_ROOT; };
-		DDC4BEBF152E351F00089409 /* online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = online.png; sourceTree = "<group>"; };
-		DDC4BEC0152E351F00089409 /* online@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "online@2x.png"; sourceTree = "<group>"; };
-		DDC4BEC4152E366800089409 /* OfflineLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineLayerViewController.h; sourceTree = "<group>"; };
-		DDC4BEC5152E366800089409 /* OfflineLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflineLayerViewController.m; sourceTree = "<group>"; };
-		DDC4BEC7152E36FF00089409 /* offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offline.png; sourceTree = "<group>"; };
-		DDC4BEC8152E36FF00089409 /* offline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offline@2x.png"; sourceTree = "<group>"; };
-		DDC4BECB152E380900089409 /* control-room-0.2.0.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "control-room-0.2.0.mbtiles"; sourceTree = "<group>"; };
-		DDC4BECD152E38D200089409 /* interactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interactive.png; sourceTree = "<group>"; };
-		DDC4BECE152E38D200089409 /* interactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "interactive@2x.png"; sourceTree = "<group>"; };
-		DDC4BEEF152E3EEE00089409 /* InteractiveLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveLayerViewController.m; sourceTree = "<group>"; };
-		DDC4BEF0152E3EEE00089409 /* InteractiveLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveLayerViewController.h; sourceTree = "<group>"; };
 		DDC4BF10152E455500089409 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DDD9E7A615912CA700F29679 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		DDD9E7A715912CA700F29679 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -108,12 +123,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DD96556F152649F10008517A /* MapBox SDK */ = {
+		DD96556F152649F10008517A /* MapBox iOS SDK */ = {
 			isa = PBXGroup;
 			children = (
 				DD96557015264A080008517A /* MapView.xcodeproj */,
 			);
-			name = "MapBox SDK";
+			name = "MapBox iOS SDK";
 			path = "MapBox Example";
 			sourceTree = "<group>";
 		};
@@ -129,13 +144,21 @@
 		DDC4BEC3152E356F00089409 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DDC4BECB152E380900089409 /* control-room-0.2.0.mbtiles */,
-				DDC4BEBF152E351F00089409 /* online.png */,
-				DDC4BEC0152E351F00089409 /* online@2x.png */,
-				DDC4BEC7152E36FF00089409 /* offline.png */,
-				DDC4BEC8152E36FF00089409 /* offline@2x.png */,
-				DDC4BECD152E38D200089409 /* interactive.png */,
-				DDC4BECE152E38D200089409 /* interactive@2x.png */,
+				7940A349159D00C100989592 /* flagtag.png */,
+				7940A34A159D00C100989592 /* flagtag@2x.png */,
+				7969252E159BDA1500E9B7EE /* Default.png */,
+				7969252F159BDA1500E9B7EE /* Default@2x.png */,
+				7969251B159BC48000E9B7EE /* tabbarBackground.png */,
+				7969251C159BC48000E9B7EE /* tabbarSelection.png */,
+				79692517159BC3DD00E9B7EE /* tabbarBackground@2x.png */,
+				79692518159BC3DD00E9B7EE /* tabbarSelection@2x.png */,
+				79388C51159A7FDD00C5C66B /* background.png */,
+				7969252A159BCF5C00E9B7EE /* legendBackground.png */,
+				7969252B159BCF5C00E9B7EE /* legendBackground@2x.png */,
+				79692523159BC98400E9B7EE /* legend.png */,
+				79692524159BC98400E9B7EE /* legend@2x.png */,
+				7969251F159BC83600E9B7EE /* map.png */,
+				79692520159BC83600E9B7EE /* map@2x.png */,
 				DDD9E7A715912CA700F29679 /* icon.png */,
 				DDD9E7A615912CA700F29679 /* icon@2x.png */,
 			);
@@ -148,7 +171,7 @@
 			children = (
 				DDEF3A331522813600DE6DB0 /* MapBox Example */,
 				DDC4BEC3152E356F00089409 /* Resources */,
-				DD96556F152649F10008517A /* MapBox SDK */,
+				DD96556F152649F10008517A /* MapBox iOS SDK */,
 				DDEF3A2C1522813600DE6DB0 /* Frameworks */,
 				DDEF3A2A1522813600DE6DB0 /* Products */,
 			);
@@ -181,12 +204,10 @@
 			children = (
 				DDEF3A3C1522813600DE6DB0 /* AppDelegate.h */,
 				DDEF3A3D1522813600DE6DB0 /* AppDelegate.m */,
+				79692527159BCB8C00E9B7EE /* LegendLayerViewController.h */,
+				79692528159BCB8C00E9B7EE /* LegendLayerViewController.m */,
 				DDEF3A3F1522813600DE6DB0 /* OnlineLayerViewController.h */,
 				DDEF3A401522813600DE6DB0 /* OnlineLayerViewController.m */,
-				DDC4BEC4152E366800089409 /* OfflineLayerViewController.h */,
-				DDC4BEC5152E366800089409 /* OfflineLayerViewController.m */,
-				DDC4BEF0152E3EEE00089409 /* InteractiveLayerViewController.h */,
-				DDC4BEEF152E3EEE00089409 /* InteractiveLayerViewController.m */,
 				DDEF3A341522813600DE6DB0 /* Supporting Files */,
 			);
 			path = "MapBox Example";
@@ -195,6 +216,7 @@
 		DDEF3A341522813600DE6DB0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				79C31568159CE7C500F2747D /* HiddenView.xib */,
 				DDEF3A351522813600DE6DB0 /* MapBox Example-Info.plist */,
 				DDEF3A361522813600DE6DB0 /* InfoPlist.strings */,
 				DDEF3A391522813600DE6DB0 /* main.m */,
@@ -279,15 +301,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDEF3A381522813600DE6DB0 /* InfoPlist.strings in Resources */,
-				DDC4BEC1152E351F00089409 /* online.png in Resources */,
-				DDC4BEC2152E351F00089409 /* online@2x.png in Resources */,
-				DDC4BEC9152E36FF00089409 /* offline.png in Resources */,
-				DDC4BECA152E36FF00089409 /* offline@2x.png in Resources */,
-				DDC4BECC152E380900089409 /* control-room-0.2.0.mbtiles in Resources */,
-				DDC4BECF152E38D200089409 /* interactive.png in Resources */,
-				DDC4BED0152E38D200089409 /* interactive@2x.png in Resources */,
 				DDD9E7A815912CA700F29679 /* icon@2x.png in Resources */,
 				DDD9E7A915912CA700F29679 /* icon.png in Resources */,
+				79388C52159A7FDD00C5C66B /* background.png in Resources */,
+				79692519159BC3DD00E9B7EE /* tabbarBackground@2x.png in Resources */,
+				7969251A159BC3DD00E9B7EE /* tabbarSelection@2x.png in Resources */,
+				7969251D159BC48000E9B7EE /* tabbarBackground.png in Resources */,
+				7969251E159BC48000E9B7EE /* tabbarSelection.png in Resources */,
+				79692521159BC83600E9B7EE /* map.png in Resources */,
+				79692522159BC83600E9B7EE /* map@2x.png in Resources */,
+				79692525159BC98400E9B7EE /* legend.png in Resources */,
+				79692526159BC98400E9B7EE /* legend@2x.png in Resources */,
+				7969252C159BCF5C00E9B7EE /* legendBackground.png in Resources */,
+				7969252D159BCF5C00E9B7EE /* legendBackground@2x.png in Resources */,
+				79692530159BDA1500E9B7EE /* Default.png in Resources */,
+				79692531159BDA1500E9B7EE /* Default@2x.png in Resources */,
+				79C31569159CE7C500F2747D /* HiddenView.xib in Resources */,
+				7940A34B159D00C100989592 /* flagtag.png in Resources */,
+				7940A34C159D00C100989592 /* flagtag@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,8 +332,7 @@
 				DDEF3A3A1522813600DE6DB0 /* main.m in Sources */,
 				DDEF3A3E1522813600DE6DB0 /* AppDelegate.m in Sources */,
 				DDEF3A411522813600DE6DB0 /* OnlineLayerViewController.m in Sources */,
-				DDC4BEC6152E366800089409 /* OfflineLayerViewController.m in Sources */,
-				DDC4BEF1152E3EEE00089409 /* InteractiveLayerViewController.m in Sources */,
+				79692529159BCB8C00E9B7EE /* LegendLayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
